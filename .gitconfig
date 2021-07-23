@@ -1,0 +1,23 @@
+[user]
+	name = Pablo Alcala Marti
+	email = pabalca@gmail.com
+[core]
+	editor = vim
+[alias]
+	st = status
+	co = checkout
+	cob = checkout -b
+	br = branch
+	brn = rev-parse --abbrev-ref HEAD
+	brd = branch -d
+	brD = branch -D
+	a = add .
+	cm = commit -m
+	uc = reset --mixed HEAD^
+	pub = !git push --set-upstream origin $(git branch | awk '/*/ {print $2}')
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+
